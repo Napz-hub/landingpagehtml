@@ -1,213 +1,359 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Praktikum Pemrograman HTML</title>
-<style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modul 0.1 - Praktikum Pemrograman HTML</title>
+  <style>
     body {
-        font-family: Arial, sans-serif;
-        background-color: #FFFCFC;
-        margin: 0;
-        padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+      color: #222;
+      margin: 20px;
+      line-height: 1.6;
     }
-    .header {
-        background-color: #00FFEA;
-        color: #000000;
-        text-align: center;
-        padding: 10px 0;
-        border-bottom: 3px solid #000;
-    }
-    .header h1 {
-        margin: 5px 0;
-    }
-    .container {
-        width: 90%;
-        background-color: #0FE9D3#DCDBE1white;
-        margin: 20px auto;
-        padding: 15px;
-        border: 1px solid #00E1FF;
-    }
-    h2 {
-        color: #000;
+    h1, h2, h3, h4 {
+      color: #004aad;
     }
     table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 10px;
-        margin-bottom: 20px;
+      border-collapse: collapse;
+      width: 80%;
+      margin: 10px 0;
     }
-    table, th, td {
-        border: 1px solid #000000;
+    th, td {
+      border: 1px solid #555;
+      padding: 8px;
+      text-align: left;
     }
     th {
-        background-color: #ffd700;
-    }
-    td, th {
-        padding: 5px;
-        text-align: left;
+      background-color: #e0e0e0;
     }
     hr {
-        border: 1px solid #000;
+      border: none;
+      height: 2px;
+      background-color: #004aad;
+      margin: 20px 0;
     }
-    .footer {
-        text-align: center;
-        font-size: 12px;
-        background-color: #ffd700;
-        padding: 10px;
-        border-top: 2px solid #000;
+    img {
+      border-radius: 10px;
     }
-    .layout {
-        width: 80%;
-        margin: 20px auto;
-        border: 1px solid #000;
-        background-color: #fff8dc;
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      margin-top: 40px;
+      color: #555;
     }
-    .layout-header, .layout-footer {
-        background-color: #ffd700;
-        text-align: center;
-        font-weight: bold;
-        padding: 8px;
-    }
-    .layout-body {
-        display: flex;
-    }
-    .layout-menu {
-        width: 25%;
-        background-color: #fffacd;
-        border-right: 1px solid #000;
-        padding: 10px;
-    }
-    .layout-content {
-        width: 75%;
-        padding: 10px;
-    }
-</style>
+  </style>
 </head>
 <body>
 
-<div class="header">
+  <header>
     <h1>SMK MUHAMMADIYAH 3 TANGERANG SELATAN</h1>
-    <p>Program Keahlian Rekayasa Perangkat Lunak</p>
-    <p><strong>Modul 0.1 - Praktikum Pemrograman HTML (HTML, PHP, dan CSS)</strong></p>
-</div>
+    <p>Program Keahlian: <b>Rekayasa Perangkat Lunak</b></p>
+    <p><strong>Modul 0.1 - Praktikum Pemrograman HTML, PHP, dan CSS</strong></p>
+  </header>
 
-<div class="container">
+  <section>
     <h2>Praktikum Pemrograman HTML</h2>
-    <p><b>HTML, PHP dan CSS</b></p>
-    <p><i>Disusun oleh: Kevin Permana, S.Kom</i></p>
+    <p><b>Bahasan:</b> HTML, PHP, dan CSS</p>
+    <p><i>Penyusun: Kevin Permana, S.Kom</i></p>
+  </section>
 
+  <section>
     <h3>1. Tujuan</h3>
     <ul>
-        <li>Peserta didik dapat memahami dasar pemrograman server-side menggunakan HTML.</li>
-        <li>Peserta didik mengetahui sintaks-sintaks dasar HTML.</li>
-        <li>Peserta didik mampu menyelesaikan permasalahan sederhana menggunakan HTML.</li>
+      <li>Mengenal dasar pemrograman berbasis server menggunakan HTML.</li>
+      <li>Mengetahui struktur dan sintaks dasar HTML.</li>
+      <li>Mampu membuat solusi sederhana menggunakan HTML.</li>
     </ul>
+  </section>
 
+  <section>
     <h3>2. Dasar Teori</h3>
     <p>
-        HTML (HyperText Markup Language) merupakan bahasa markup untuk menyusun halaman web yang dapat dibaca oleh browser.
-        Browser seperti Google Chrome atau Firefox akan menerjemahkan kode HTML menjadi tampilan visual halaman web.
+      <b>HTML (HyperText Markup Language)</b> adalah bahasa markup standar untuk membuat halaman web.
+      Browser seperti <i>Google Chrome</i> atau <i>Mozilla Firefox</i> akan membaca dan menampilkan
+      struktur HTML dalam bentuk visual yang mudah dipahami pengguna.
     </p>
 
-    <p><b>Beberapa Elemen HTML yang Sering Digunakan:</b></p>
+    <p><b>Beberapa Elemen HTML yang Umum Digunakan:</b></p>
     <table>
-        <tr><th>Tag</th><th>Fungsi</th></tr>
-        <tr><td>&lt;h1&gt;-&lt;h6&gt;</td><td>Judul atau heading</td></tr>
-        <tr><td>&lt;p&gt;</td><td>Paragraf teks</td></tr>
-        <tr><td>&lt;a&gt;</td><td>Hyperlink</td></tr>
-        <tr><td>&lt;img&gt;</td><td>Menampilkan gambar</td></tr>
-        <tr><td>&lt;br&gt;</td><td>Ganti baris</td></tr>
-        <tr><td>&lt;hr&gt;</td><td>Garis pemisah horizontal</td></tr>
-        <tr><td>&lt;b&gt;</td><td>Teks tebal</td></tr>
-        <tr><td>&lt;i&gt;</td><td>Teks miring</td></tr>
+      <tr><th>Tag</th><th>Fungsi</th></tr>
+      <tr><td>&lt;h1&gt; – &lt;h6&gt;</td><td>Mendefinisikan heading atau judul</td></tr>
+      <tr><td>&lt;p&gt;</td><td>Membuat paragraf</td></tr>
+      <tr><td>&lt;a&gt;</td><td>Menambahkan hyperlink</td></tr>
+      <tr><td>&lt;img&gt;</td><td>Menampilkan gambar</td></tr>
+      <tr><td>&lt;br&gt;</td><td>Menambah baris baru</td></tr>
+      <tr><td>&lt;hr&gt;</td><td>Membuat garis horizontal</td></tr>
+      <tr><td>&lt;b&gt;</td><td>Teks tebal</td></tr>
+      <tr><td>&lt;i&gt;</td><td>Teks miring</td></tr>
     </table>
+  </section>
 
+  <section>
     <h3>3. Langkah Percobaan</h3>
 
-    <h4>3.1 Heading HTML</h4>
-    <h1>This is heading 1</h1>
-    <h2>This is heading 2</h2>
-    <h3>This is heading 3</h3>
-    <h4>This is heading 4</h4>
-    <h5>This is heading 5</h5>
-    <h6>This is heading 6</h6>
+    <h4>3.1 Heading</h4>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
 
-    <h4>3.2 Paragraf HTML</h4>
-    <p>This is a paragraph.</p>
-    <!--
- 
-    <p>This is another paragraph.</p>
+    <h4>3.2 Paragraf</h4>
+    <p>Ini adalah paragraf pertama.</p>
+    <p>Dan ini adalah paragraf kedua.</p>
+    <h4>3.3 Link</h4>
+    <p><a href="https://www.w3schools.com" target="_blank">Kunjungi W3Schools untuk belajar HTML</a></p>
 
-    <h4>3.3 HTML Link</h4>
-    <p><a href="https://www.w3schools.com" target="_blank">This is a link to W3Schools</a></p>
-
-    <h4>3.4 HTML Image</h4>
-    <p><img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Logo_PENS.png" alt="Logo PENS" width="100"><br>
-    Politeknik Elektronika Negeri Surabaya</p>
+    <h4>3.4 Gambar</h4>
+    <p>
+      <img src="logo-smkm3.png" alt="Logo SMK Muhammadiyah 3" width="120"><br>
+      <b>SMK Muhammadiyah 3 Tangerang Selatan</b>
+    </p>
 
     <h4>3.5 Garis Horizontal</h4>
-    <p>Tag &lt;hr&gt; mendefinisikan garis horizontal:</p>
+    <p>Tag &lt;hr&gt; digunakan untuk membuat garis pembatas:</p>
     <hr>
-    <p>This is a paragraph.</p>
 
     <h4>3.6 Ganti Baris</h4>
-    <p>This is<br>a para<br>graph with line breaks</p>
+    <p>Ini adalah<br>contoh teks<br>dengan baris baru.</p>
 
-    <h4>3.7 Format Teks HTML</h4>
-    <p><b>This text is bold</b></p>
-    <p><i>This text is italic</i></p>
-    <p><u>This text is underlined</u></p>
-    <p>This is <sub>subscript</sub> and <sup>superscript</sup></p>
+    <h4>3.7 Format Teks</h4>
+    <p><b>Teks ini tebal</b></p>
+    <p><i>Teks ini miring</i></p>
+    <p><u>Teks ini bergaris bawah</u></p>
+    <p>Ini contoh <sub>subscript</sub> dan <sup>superscript</sup>.</p>
 
-    <h4>3.8 HTML Table</h4>
+    <h4>3.8 Tabel</h4>
     <table>
-        <tr><th>Firstname</th><th>Lastname</th><th>Points</th></tr>
-        <tr><td>Jill</td><td>Smith</td><td>50</td></tr>
-        <tr><td>Eve</td><td>Jackson</td><td>94</td></tr>
-        <tr><td>John</td><td>Doe</td><td>80</td></tr>
+      <tr><th>Nama Depan</th><th>Nama Belakang</th><th>Nilai</th></tr>
+      <tr><td>Jill</td><td>Smith</td><td>50</td></tr>
+      <tr><td>Eve</td><td>Jackson</td><td>94</td></tr>
+      <tr><td>John</td><td>Doe</td><td>80</td></tr>
     </table>
 
-    <h4>3.9 HTML List</h4>
-    <p><b>Unordered List</b></p>
+    <h4>3.9 List</h4>
+    <p><b>Unordered List:</b></p>
     <ul>
-        <li>Apples</li>
-        <li>Bananas</li>
-        <li>Lemons</li>
-        <li>Oranges</li>
+      <li>Apel</li>
+      <li>Pisang</li>
+      <li>Lemon</li>
+      <li>Jeruk</li>
     </ul>
 
-    <p><b>Ordered List</b></p>
+    <p><b>Ordered List:</b></p>
     <ol>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
     </ol>
 
-    <h4>3.10 HTML Layout</h4>
-    <div class="layout">
-        <div class="layout-header">Main Title of Web Page</div>
-        <div class="layout-body">
-            <div class="layout-menu">
-                <b>Menu</b><br>
-                HTML<br>
-                CSS<br>
-                JavaScript
-            </div>
-            <div class="layout-content">
-                Content goes here...
-            </div>
-        </div>
-        <div class="layout-footer">Copyright © SMK Muhammadiyah 3 Tangerang Selatan</div>
+    <h4>3.10 Layout Sederhana</h4>
+    <div>
+      <h3>Judul Utama Halaman</h3>
+      <div>
+        <p><b>Menu Navigasi:</b></p>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+      <div>
+        <p>Konten utama ditampilkan di bagian ini...</p>
+      </div>
     </div>
-</div>
+  </section>
 
-<div class="footer">
-    Modul 0.1 - Praktikum Pemrograman HTML<br>
+  <footer>
+    <p><b>Modul 0.1 - Praktikum Pemrograman HTML</b><br>
     SMK Muhammadiyah 3 Tangerang Selatan<br>
-    Program Keahlian Rekayasa Perangkat Lunak
-</div>
+    Program Keahlian Rekayasa Perangkat Lunak</p>
+
+    <hr>
+
+  </footer>
 
 </body>
-  </html>
-  
+                           </html><!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modul 0.1 - Praktikum Pemrograman HTML</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+      color: #222;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    h1, h2, h3, h4 {
+      color: #004aad;
+    }
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: 10px 0;
+    }
+    th, td {
+      border: 1px solid #555;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #e0e0e0;
+    }
+    hr {
+      border: none;
+      height: 2px;
+      background-color: #004aad;
+      margin: 20px 0;
+    }
+    img {
+      border-radius: 10px;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      margin-top: 40px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SMK MUHAMMADIYAH 3 TANGERANG SELATAN</h1>
+    <p>Program Keahlian: <b>Rekayasa Perangkat Lunak</b></p>
+    <p><strong>Modul 0.1 - Praktikum Pemrograman HTML, PHP, dan CSS</strong></p>
+  </header>
+
+  <section>
+    <h2>Praktikum Pemrograman HTML</h2>
+    <p><b>Bahasan:</b> HTML, PHP, dan CSS</p>
+    <p><i>Penyusun: Kevin Permana, S.Kom</i></p>
+  </section>
+
+  <section>
+    <h3>1. Tujuan</h3>
+    <ul>
+      <li>Mengenal dasar pemrograman berbasis server menggunakan HTML.</li>
+      <li>Mengetahui struktur dan sintaks dasar HTML.</li>
+      <li>Mampu membuat solusi sederhana menggunakan HTML.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>2. Dasar Teori</h3>
+    <p>
+      <b>HTML (HyperText Markup Language)</b> adalah bahasa markup standar untuk membuat halaman web.
+      Browser seperti <i>Google Chrome</i> atau <i>Mozilla Firefox</i> akan membaca dan menampilkan
+      struktur HTML dalam bentuk visual yang mudah dipahami pengguna.
+    </p>
+
+    <p><b>Beberapa Elemen HTML yang Umum Digunakan:</b></p>
+    <table>
+      <tr><th>Tag</th><th>Fungsi</th></tr>
+      <tr><td>&lt;h1&gt; – &lt;h6&gt;</td><td>Mendefinisikan heading atau judul</td></tr>
+      <tr><td>&lt;p&gt;</td><td>Membuat paragraf</td></tr>
+      <tr><td>&lt;a&gt;</td><td>Menambahkan hyperlink</td></tr>
+      <tr><td>&lt;img&gt;</td><td>Menampilkan gambar</td></tr>
+      <tr><td>&lt;br&gt;</td><td>Menambah baris baru</td></tr>
+      <tr><td>&lt;hr&gt;</td><td>Membuat garis horizontal</td></tr>
+      <tr><td>&lt;b&gt;</td><td>Teks tebal</td></tr>
+      <tr><td>&lt;i&gt;</td><td>Teks miring</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h3>3. Langkah Percobaan</h3>
+
+    <h4>3.1 Heading</h4>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <h4>3.2 Paragraf</h4>
+    <p>Ini adalah paragraf pertama.</p>
+    <p>Dan ini adalah paragraf kedua.</p>
+    <h4>3.3 Link</h4>
+    <p><a href="https://www.w3schools.com" target="_blank">Kunjungi W3Schools untuk belajar HTML</a></p>
+
+    <h4>3.4 Gambar</h4>
+    <p>
+      <img src="logo-smkm3.png" alt="Logo SMK Muhammadiyah 3" width="120"><br>
+      <b>SMK Muhammadiyah 3 Tangerang Selatan</b>
+    </p>
+
+    <h4>3.5 Garis Horizontal</h4>
+    <p>Tag &lt;hr&gt; digunakan untuk membuat garis pembatas:</p>
+    <hr>
+
+    <h4>3.6 Ganti Baris</h4>
+    <p>Ini adalah<br>contoh teks<br>dengan baris baru.</p>
+
+    <h4>3.7 Format Teks</h4>
+    <p><b>Teks ini tebal</b></p>
+    <p><i>Teks ini miring</i></p>
+    <p><u>Teks ini bergaris bawah</u></p>
+    <p>Ini contoh <sub>subscript</sub> dan <sup>superscript</sup>.</p>
+
+    <h4>3.8 Tabel</h4>
+    <table>
+      <tr><th>Nama Depan</th><th>Nama Belakang</th><th>Nilai</th></tr>
+      <tr><td>Jill</td><td>Smith</td><td>50</td></tr>
+      <tr><td>Eve</td><td>Jackson</td><td>94</td></tr>
+      <tr><td>John</td><td>Doe</td><td>80</td></tr>
+    </table>
+
+    <h4>3.9 List</h4>
+    <p><b>Unordered List:</b></p>
+    <ul>
+      <li>Apel</li>
+      <li>Pisang</li>
+      <li>Lemon</li>
+      <li>Jeruk</li>
+    </ul>
+
+    <p><b>Ordered List:</b></p>
+    <ol>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ol>
+
+    <h4>3.10 Layout Sederhana</h4>
+    <div>
+      <h3>Judul Utama Halaman</h3>
+      <div>
+        <p><b>Menu Navigasi:</b></p>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+      <div>
+        <p>Konten utama ditampilkan di bagian ini...</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p><b>Modul 0.1 - Praktikum Pemrograman HTML</b><br>
+    SMK Muhammadiyah 3 Tangerang Selatan<br>
+    Program Keahlian Rekayasa Perangkat Lunak</p>
+
+    <hr>
+
+  </footer>
+
+</body>
+                                    </html>
